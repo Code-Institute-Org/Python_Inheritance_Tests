@@ -8,7 +8,7 @@ class Developer(Employee):
 
     @property
     def details(self):
-        return super(Developer, self).details + ' Programming Language: %s' % self.prog_language
+        return super(Developer, self).details + 'Programming Language: %s' % self.prog_language
 
     def calculate_salary(self):
         standard = super(Developer, self).calculate_salary()
