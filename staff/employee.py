@@ -23,7 +23,6 @@ class Employee(object):
             bonus = salary * 0.25
         return salary + bonus
 
-    @property
     def details(self):
         return " First Name: %s\n Surname: %s\n Years Worked: %s\n Employee Number: %s\n Salary: %s\n " % (
             self.fname, self.sname, self.no_of_years, self.employee_number, self.calculate_salary())

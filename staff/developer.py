@@ -1,4 +1,4 @@
-from staff.employee import Employee
+from employee import Employee
 
 
 class Developer(Employee):
@@ -6,9 +6,9 @@ class Developer(Employee):
         self.prog_language = prog_language
         super(Developer, self).__init__(fname, sname, no_of_years)
 
-    @property
+
     def details(self):
-        return super(Developer, self).details + 'Programming Language: %s' % self.prog_language
+        return super(Developer, self).details() + 'Programming Language: %s' % self.prog_language
 
     def calculate_salary(self):
         standard = super(Developer, self).calculate_salary()
